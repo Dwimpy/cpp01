@@ -6,7 +6,7 @@
 /*   By: arobu <arobu@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 15:51:55 by arobu             #+#    #+#             */
-/*   Updated: 2023/06/23 15:28:51 by arobu            ###   ########.fr       */
+/*   Updated: 2023/06/28 14:51:11 by arobu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ int	main(int argc, char **argv)
 	Zombie *hoard = zombieHoard(N_ZOMBIES, "Gravewalker");
 	while (++i < N_ZOMBIES)
 		hoard[i].announce();
+	delete[] hoard;
 	return (0);
 }

@@ -2,7 +2,7 @@ NAME	:= human
 
 CC		:= c++
 RM		:= rm
-FLAGS	:= -std=c++98 #-Wall -Werror -Wextra
+FLAGS	:= -std=c++98 -Wall -Werror -Wextra
 
 INCLUDE := ./include
 SRC_DIR	:= ./src

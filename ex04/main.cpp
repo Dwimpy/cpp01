@@ -6,7 +6,7 @@
 /*   By: arobu <arobu@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/23 15:32:27 by arobu             #+#    #+#             */
-/*   Updated: 2023/06/25 18:40:42 by arobu            ###   ########.fr       */
+/*   Updated: 2023/06/28 14:54:07 by arobu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,8 @@ int main(int argc, char **argv)
 				  << "Every occurance of find in file is swapped with replace" << std::endl;
 		return (1);
 	}
+	if (std::string(argv[2]) == "")
+		return (1);
 	file.open(argv[1]);
 	if (!file.is_open() || file.fail())
 	{
